@@ -35,8 +35,11 @@ for nr in unique_gen:
 # Write a generator function that takes a path and a file extension as
 # positional-only arguments (both as strings), and a boolean recursive as
 # keyword-only argument. The function will yield all files with the extension
-# extension in path; if recursive is true, if will also search inside
+# `extension` in path; if recursive is true, it will also search inside
 # subdirectories of path. Use os.walk or glob.iglob.
+
+# The imports were placed here in order to have the whole solution in one place
+# Imports should be listed at the top of the file
 import glob
 from pathlib import Path
 
