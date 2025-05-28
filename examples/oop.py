@@ -13,11 +13,12 @@ class Person:
         return self.date_of_birth > other.date_of_birth
 
 
-p1 = Person("Anna", date(2000, 5, 6))
-p2 = Person("Jane", date(1983, 7, 23))
+if __name__ == "__main__":
+    p1 = Person("Anna", date(2000, 5, 6))
+    p2 = Person("Jane", date(1983, 7, 23))
 
-print(str(p1), repr(p1))
-print(p1.__str__(), p1.__repr__())
+    print(str(p1), repr(p1))
+    print(p1.__str__(), p1.__repr__())
 
-print(f"{p1.name} is younger than {p2.name}:", p1 < p2)
-print(p1.__dict__, Person.__dict__)
+    print(f"{p1.name} is younger than {p2.name}:", p1 < p2)
+    print(p1.__dict__, Person.__dict__)
