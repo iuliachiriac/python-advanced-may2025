@@ -2,7 +2,7 @@ from functools import wraps
 
 
 def make_pretty(func):
-    @wraps(func)
+    @wraps(func)  # inner = wraps(func)(inner)
     def inner(*args, **kwargs):
         print(f"I got decorated. I am {func} and was called with "
               f"args={args} and kwargs={kwargs}.")
