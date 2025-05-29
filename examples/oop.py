@@ -59,8 +59,10 @@ if __name__ == "__main__":
     print(f"{p1.name} is younger than {p2.name}:", p1 < p2)
     print(p1.__dict__, Person.__dict__)
 
-    print(p1._date_of_birth)
-    print(p1._Person__date_of_birth)
+    # Private/protected members of the class shouldn't be accessed from
+    # outside the class
+    # print(p1._date_of_birth)
+    # print(p1._Person__date_of_birth)
 
     try:
         p1.date_of_birth = date(1854, 5, 7)  # setting an attribute
